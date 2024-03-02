@@ -11,7 +11,7 @@ function Form() {
     setIsLoading(true);
     try {
       const response = await fetch(
-        'https://mini-message-board-orpin.vercel.app/',
+        'https://mini-message-board-orpin.vercel.app/api/',
         {
           method: 'POST',
           headers: {

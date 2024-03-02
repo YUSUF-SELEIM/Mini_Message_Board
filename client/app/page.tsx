@@ -12,7 +12,7 @@ export default function Home() {
 
 	const fetchData = () => {
 		setIsLoading(true);
-		fetch('https://mini-message-board-orpin.vercel.app/')
+		fetch('https://mini-message-board-orpin.vercel.app/api/')
 			.then(res => res.json())
 			.then(data => setMessages(data))
 			.catch(error => console.error('Error:', error));
@@ -40,7 +40,7 @@ export default function Home() {
 						{islLoading ? <Spinner className="w-full h-[225px] mx-auto" size="lg" /> :
 							<div className="h-[225px] overflow-auto">
 								{messages.map((message: { text: string, user: string, added: string }, index: number) => (
-									<div key={index} className="px-3 py-2 flex justify-between">
+									<div key={index} className="px-3 py-2 flex justify-between items-center">
 										<User
 											name={message.user}
 											description={message.text}
