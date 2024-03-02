@@ -16,13 +16,13 @@ const messages = [
 ];
 
 /* GET home page. */
-router.get('/home', function(req, res, next) {
+router.get('/', function(req, res, next) {
   res.json(messages);
 });
 
-router.post('/home', function(req, res, next) {
+router.post('/', function(req, res, next) {
   messages.push({text: req.body.message, user: req.body.author, added: new Date()});
   console.log('submit')
-  res.redirect('/home');
+  res.redirect('/');
 })
 export default router;
