@@ -12,7 +12,7 @@ export default function Home() {
 
 	const fetchData = () => {
 		setIsLoading(true);
-		fetch('http://localhost:5000/home')
+		fetch('https://mini-message-board-orpin.vercel.app/')
 			.then(res => res.json())
 			.then(data => setMessages(data))
 			.catch(error => console.error('Error:', error));

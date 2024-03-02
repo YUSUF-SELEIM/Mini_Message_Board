@@ -11,7 +11,7 @@ function Form() {
     setIsLoading(true);
     try {
       const response = await fetch(
-        'http://localhost:5000/home',
+        'https://mini-message-board-orpin.vercel.app/',
         {
           method: 'POST',
           headers: {
