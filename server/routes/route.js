@@ -23,6 +23,7 @@ router.get('/', function(req, res, next) {
 router.post('/', function(req, res, next) {
   messages.push({text: req.body.message, user: req.body.author, added: new Date()});
   console.log('submit')
+  res.json("Hey there!");
   res.redirect('/');
 })
 export default router;
