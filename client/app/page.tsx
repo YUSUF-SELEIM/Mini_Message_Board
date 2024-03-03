@@ -1,10 +1,11 @@
 'use client';
 import { User } from "@nextui-org/user";
 import { Spinner } from "@nextui-org/spinner";
-
 import { CardBody, CardContainer, CardItem } from "../components/ui/3d-card";
 import Form from "../components/form";
 import { useState, useEffect } from 'react';
+import axios from 'axios';
+
 
 export default function Home() {
 	const [messages, setMessages] = useState([]);
@@ -12,13 +13,11 @@ export default function Home() {
 
 	const fetchData = () => {
 		setIsLoading(true);
-		fetch('https://mini-message-board-orpin.vercel.app/api/')
-			.then(res => res.json())
-			.then(data => setMessages(data))
-			.catch(error => console.error('Error:', error));
-		setIsLoading(false);
+		axios.get('https://mini-message-board-orpin.vercel.app/api/')
+			.then(res => setMessages(res.data))
+			.catch(error => console.error('Error:', error))
+			.finally(() => setIsLoading(false));
 	};
-
 	useEffect(() => {
 		fetchData();
 	}, []);
@@ -83,6 +82,5 @@ export default function Home() {
 				</CardBody>
 			</CardContainer>
 		</div>
-
 	);
 }
