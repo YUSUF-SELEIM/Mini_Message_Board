@@ -1,40 +1,37 @@
-# Next.js & NextUI Template
+# 💭 Message Board App
 
-This is a template for creating applications using Next.js 13 (app directory) and NextUI (v2).
+1. [Introduction](#introduction)
+2. [Features](#features)
+3. [Tech Stack](#tech-stack)
+5. [Deployment](#deployment)
 
-## Technologies Used
+## Introduction
 
-- [Next.js 13](https://nextjs.org/docs/getting-started)
-- [NextUI v2](https://nextui.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Tailwind Variants](https://tailwind-variants.org)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Framer Motion](https://www.framer.com/motion/)
-- [next-themes](https://github.com/pacocoursey/next-themes)
+Welcome to the Message Board App, a platform where users can share their thoughts. This application is built using the MERN stack (MongoDB, Express.js, React, Node.js), ensuring a seamless and modern development experience.
 
-## How to Use
+## Features
 
+- 📫 Post and view messages on a user-friendly interface.
+- 🔄 Real-time updates with automatic message refreshing.
+- ⚙️ MVC (Model-View-Controller) architecture for a well-organized backend.
+- 🔄 Monorepo structure for combined backend and frontend development.
+- 🌐 Database storage powered by MongoDB for efficient data handling.
+- ⚡️ Fast and responsive frontend using React and Vite.
 
-### Use the template with create-next-app
+## Tech Stack
 
-To create a new project based on this template using `create-next-app`, run the following command:
+### Backend
 
-```bash
-npx create-next-app -e https://github.com/nextui-org/next-app-template
-```
+- Express.js: Utilized for building a robust and scalable backend server.
+- MongoDB: Chosen as the database for its flexibility and ease of integration.
+- Vercel: Used for deployment and hosting of the backend.
 
-### Install dependencies
+### Frontend
 
-```bash
-npm install
-```
+- React: Developed an interactive and dynamic user interface.
+- Vite: Build tooling for modern frontend development.
+- Axios: Employed for making HTTP requests to the backend.
 
-### Run the development server
+## Deployment
 
-```bash
-npm run dev
-```
-
-## License
-
-Licensed under the [MIT license](https://github.com/nextui-org/next-app-template/blob/main/LICENSE).
+Both the backend and frontend are deployed independently on Vercel.
