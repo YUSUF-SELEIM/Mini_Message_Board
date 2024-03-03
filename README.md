@@ -34,3 +34,7 @@ Welcome to the Message Board App, a platform where users can share their thought
 ## Deployment
 
 Both the backend and frontend are deployed independently on Vercel.
+
+
+## Credits
+<a href="https://www.flaticon.com/free-icons/email" title="email icons">Email icons created by Freepik - Flaticon</a>
