@@ -38,3 +38,5 @@ Both the backend and frontend are deployed independently on Vercel.
 
 ## Credits
 <a href="https://www.flaticon.com/free-icons/email" title="email icons">Email icons created by Freepik - Flaticon</a>
+
+[text](https://mini-message-board-orpin.vercel.app/api)
