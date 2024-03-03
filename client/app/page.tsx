@@ -25,8 +25,8 @@ export default function Home() {
 
 	return (
 		<div>
-			<CardContainer className="inter-var">
-				<CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[40rem] h-auto rounded-xl p-6 border  ">
+			<CardContainer className="w-full md:w-auto inter-var">
+				<CardBody className="w-[100%] bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] md:w-[50rem] h-auto rounded-xl p-3 md:p-6 border  ">
 					<CardItem
 						translateZ="50"
 						className="text-xl mx-auto font-bold text-neutral-600 dark:text-white"
@@ -35,12 +35,12 @@ export default function Home() {
 					</CardItem>
 
 					<CardItem
-						className="w-full mt-4 px-4  dark:text-white"
+						className="w-full mt-4 md:px-4 dark:text-white"
 					>
-						{islLoading ? <Spinner className="w-full h-[225px] mx-auto" size="lg" /> :
-							<div className="h-[225px] overflow-auto">
+						{islLoading ? <Spinner className="w-full h-[250px] mx-auto" size="lg" /> :
+							<div className="md:h-[290px] h-[190px] overflow-auto">
 								{messages.map((message: { text: string, user: string, added: string }, index: number) => (
-									<div key={index} className="px-3 py-2 flex justify-between items-center">
+									<div key={index} className="md:px-3 py-2 flex justify-between items-center">
 										<User
 											name={message.user}
 											description={message.text}
