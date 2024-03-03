@@ -28,8 +28,7 @@ Welcome to the Message Board App, a platform where users can share their thought
 
 ### Frontend
 
-- React: Developed an interactive and dynamic user interface.
-- Vite: Build tooling for modern frontend development.
+- Next: Developed an interactive and dynamic user interface.
 - Axios: Employed for making HTTP requests to the backend.
 
 ## Deployment
